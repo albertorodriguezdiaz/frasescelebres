@@ -33,15 +33,11 @@ function App() {
   const [frase, guardarFrase] = useState({});
 
 const consultarAPI = async () => {
-  const api = await fetch('https://zenquotes.io/api/v1/quotes', {
-    
-    'headers': {
-        'Access-Control-Allow-Origin': '*',
-    },
-    'mode': 'no-cors',
-});
+  // const api = await fetch('https://zenquotes.io/api/v1/quotes', {
+  const api = await fetch('https://breakingbadapi.com/api/quote/random');
   const frase = await api.json();
   guardarFrase(frase[0]);
+  // console.log(frase[0]);
 }
 
 

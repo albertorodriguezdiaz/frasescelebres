@@ -39,8 +39,8 @@ const Frase = ({frase}) => {
 
     return ( 
         <ContenedorFrase>
-            <h1>{frase.q} </h1>
-            <p>- {frase.a} </p>
+            <h1>{frase.quote} </h1>
+            <p>- {frase.author} </p>
         </ContenedorFrase>
      );
 }
